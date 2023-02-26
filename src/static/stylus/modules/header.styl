@@ -1,0 +1,335 @@
+.header
+	position relative
+	width 100%
+	background-color #fffef9
+	background url("../img/general/header-bg.png") center bottom no-repeat,
+    linear-gradient(to top, #ffffff 0%, #fff9df 100%)
+	background-size 100% auto
+	padding-top 92px
+	padding-bottom 450px
+	margin-bottom 70px
+	
+	@media screen and (max-width tabletWidth)
+		padding-bottom 250px
+	
+	@media screen and (max-width bigPhoneWidth)
+		padding-top 30px
+		padding-bottom 200px
+		
+.cloud1
+	background url("../img/general/cloud-1.png") center no-repeat
+	absolute($top:300px,$left:-15px)
+	size(118px,77px)
+	
+	@media screen and (max-width desktopWidth)
+		left 0
+	
+	@media screen and (max-width smallDesktopWidth)
+		absolute($top:200px,$left:25px)
+	
+	@media screen and (max-width tabletWidth)
+		display none
+	
+.cloud2
+	background url("../img/general/cloud-2.png") center no-repeat
+	absolute($top:263px,$right:-21px)
+	size(86px,49px)
+	
+	@media screen and (max-width desktopWidth)
+		right 0
+	
+	@media screen and (max-width smallDesktopWidth)
+		absolute($top:220px,$right:25px)
+	
+	@media screen and (max-width tabletWidth)
+		display none
+		
+.logo-wrapper__tagline
+	display inline-block
+	absolute($left:-45px)
+	background-color #fff
+	box-shadow 4px 7px 7px rgba(41,36,17, 0.06)
+	padding 15px 37px
+	color accentColor
+	font-size rem(16)
+	border-radius 24px
+	position relative
+	
+	&:after
+		content ''
+		display block
+		absolute($bottom:-10px,$left:55px)
+		size(0)
+		border-style solid
+		border-width 10px 7px 0 7px
+		border-color #fff transparent transparent transparent
+		
+
+	strong
+		margin-left 3px
+		
+	@media screen and (max-width desktopWidth)
+		left 0
+		
+	@media screen and (max-width smallDesktopWidth)
+		left 0
+		
+	@media screen and (max-width tabletWidth)
+		left 0
+		
+	@media screen and (max-width bigPhoneWidth)
+		font-size rem(13)
+		left -17px
+		bottom -6px
+		padding 15px 17px
+
+.logo-wrapper
+	align-items flex-end
+	margin-bottom 25px
+	
+	
+.promises-counter
+	color accentColor
+	font-size rem(20)
+
+.promises-counter__img
+	margin-bottom 8px
+	.icon
+		size(35px)
+		fill #eb5238
+		
+.promises-counter__number
+	font-weight 700
+	line-height 1
+	margin-bottom 4px
+	
+.promises-counter__desc
+	font-size rem(16)
+	font-weight 300
+	line-height 1
+	
+.header-content
+	text-align center
+	width 100%
+	max-width 650px
+	margin 0 auto
+
+.header-content__img
+	margin-bottom 30px
+	
+.header-content__subtitle
+	color: #eb5238
+	font-size rem(20)
+	font-weight 300
+	line-height 19.13px
+	margin-bottom 21px
+	
+.header-content__title
+	color accentColor
+	font-size rem(38)
+	font-weight 700
+	line-height 39.85px
+	margin-bottom 36px
+	
+	@media screen and (max-width tabletWidth)
+		font-size rem(30)
+	
+	@media screen and (max-width bigPhoneWidth)
+		font-size rem(25)
+		
+	
+.header-names
+	position relative
+	margin 0 auto
+	display flex
+	justify-content center
+	width 100%
+	margin-bottom 60px
+	
+	@media screen and (max-width tabletWidth)
+		flex-direction column
+		
+	//@media screen and (max-width bigPhoneWidth)
+	//	flex-direction column
+	
+.header-names-left
+	width 50%
+	text-align right
+	padding-right 80px
+	padding-top 10px
+	
+	@media screen and (max-width tabletWidth)
+		width 100%
+		padding-right 0
+		text-align center
+		padding-bottom 80px
+	
+		
+.header-names-button
+	absolute-center()
+	
+.header-names-right
+	width 50%
+	text-align left
+	padding-left 60px
+	padding-top 10px
+	
+	@media screen and (max-width tabletWidth)
+		width 100%
+		padding-left 0
+		text-align center
+		padding-top 60px
+	
+	
+.header-names__name
+	color #eb5238
+	font-size rem(22)
+	font-weight 700
+	line-height 40px
+	
+.header-names__mail
+	color accentColor
+	font-weight 700
+	line-height 36px
+	
+.header-names-circle
+	position relative
+	size(91px)
+	background-color #ed543a
+	border-radius 50%
+	
+	.icon
+		size(54px,46px)
+		absolute-center()
+		fill #fff9df
+	
+	&:after
+		content '+'
+		display block
+		size(37px)
+		background-color #ffcc36
+		border-radius 50%
+		absolute($bottom:15px,$left:50%)
+		transform translate(-50%,100%)
+		
+		color: #ffffff
+		font-size rem(30)
+		font-weight 300
+		line-height 37px
+		text-align center
+		
+	
+.scroll-desc
+	color accentColor
+	font-weight 300
+	line-height 24.06px
+	margin-bottom 25px
+	text-align center
+	
+	@media screen and (max-width bigPhoneWidth)
+		margin-bottom 35px
+	
+.scroll-bg
+	max-width 750px
+	background-color: #fff9df
+	position relative
+	text-align center
+	padding 50px 20px
+	margin 0 auto
+	
+	@media screen and (max-width tabletWidth)
+		width 100%
+		max-width 450px
+	
+	
+	&:before
+		content ''
+		size(73px,174px)
+		background url("../img/general/left-scroll.png") center no-repeat
+		display block
+		absolute($left:-23px,$top:-28px)
+		
+		@media screen and (max-width smallDesktopWidth)
+			left:-15px
+		
+		@media screen and (max-width tabletWidth)
+			left:-13px
+		
+		@media screen and (max-width bigPhoneWidth)
+			left:-17px
+		
+	&:after
+		content ''
+		size(73px,174px)
+		background url("../img/general/right-scroll.png") center no-repeat
+		display block
+		absolute($right:-23px,$top:-28px)
+		
+		@media screen and (max-width smallDesktopWidth)
+			right:-15px
+		
+		@media screen and (max-width tabletWidth)
+			right:-13px
+		
+		@media screen and (max-width bigPhoneWidth)
+			right:-17px
+
+.scroll-title
+	color #8d8b80
+	font-size rem(18)
+	font-weight 500
+	line-height 24.06px
+	
+	@media screen and (max-width bigPhoneWidth)
+		font-size rem(16)
+		
+
+.link-circle
+	display: block
+	size(81px)
+	background-color rgba(233, 82, 56, .2)
+	border-radius 50%
+	absolute($bottom:10px,$left:50%)
+	transform translateX(-50%)
+	
+	@media screen and (max-width smallDesktopWidth)
+		transform translate(-50%,50%)
+	
+	@media screen and (max-width tabletWidth)
+		size(54px)
+		transform translate(-50%,50%)
+	
+	@media screen and (max-width bigPhoneWidth)
+		transform translate(-50%,50%)
+		size(34px)
+		
+
+.link-circle-inner
+	size(55px)
+	background-color #eb5238
+	border-radius 50%
+	absolute-center()
+	
+	@media screen and (max-width tabletWidth)
+		size(34px)
+	
+	@media screen and (max-width bigPhoneWidth)
+		size(26px)
+	
+	.icon
+		absolute-center()
+		size(19px,12px)
+		fill #fff
+		
+		@media screen and (max-width smallDesktopWidth)
+			size(19px,12px)
+		
+		@media screen and (max-width bigPhoneWidth)
+			size(15px,12px)
+	
+		
+	
+
+
+
+	

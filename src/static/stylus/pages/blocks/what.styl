@@ -1,0 +1,270 @@
+.what
+	position relative
+	
+	&:after
+		content''
+		size(612px,518px)
+		display block
+		absolute($right:0,$top:150px)
+		background url("../img/general/shape-3.png") right top no-repeat
+		z-index -1
+
+.what-content
+	display flex
+	justify-content space-between
+	
+	@media screen and (max-width desktopWidth)
+		flex-direction column
+		margin-left 70px
+	
+	@media screen and (max-width smallDesktopWidth)
+		flex-direction column
+		margin-left 0
+	
+.what-content-cards
+	width 49%
+	flex-shrink 0
+	display flex
+	align-items center
+	
+	@media screen and (max-width desktopWidth)
+		width 100%
+		flex-direction row
+		order 2
+		flex-wrap nowrap
+	
+	@media screen and (max-width smallDesktopWidth)
+		width 100%
+		flex-direction row
+		order 2
+		justify-content center
+	
+	@media screen and (max-width tabletWidth)
+		flex-direction column
+	
+.what-content-cards__1column
+	
+	@media screen and (max-width desktopWidth)
+		width 49%
+		flex-direction row
+	
+	@media screen and (max-width smallDesktopWidth)
+		width 49%
+		flex-direction row
+	
+	@media screen and (max-width tabletWidth)
+		width 100%
+
+.what-content-cards__2column
+	flex-direction row
+	
+	@media screen and (max-width desktopWidth)
+		width 49%
+		flex-direction row
+	
+	@media screen and (max-width smallDesktopWidth)
+		width 49%
+	
+	@media screen and (max-width tabletWidth)
+		width 100%
+	
+	
+.what-content-info
+	width 49%
+	flex-shrink 0
+	margin-top 100px
+	
+	@media screen and (max-width desktopWidth)
+		width 100%
+		order 1
+		margin-top 0
+		text-align center
+	
+	
+	@media screen and (max-width smallDesktopWidth)
+		width 100%
+		order 1
+		margin-top 0
+	
+.what-content-info__tabs
+	display flex
+	justify-content space-between
+	margin-bottom 50px
+	cursor pointer
+	
+	@media screen and (max-width desktopWidth)
+		justify-content center
+	
+	@media screen and (max-width smallDesktopWidth)
+		flex-direction column
+		width 100%
+		
+	
+.what-content-info__tab
+	border-radius 30px
+	background-color #fff9df
+	font-weight 400
+	color accentColor
+	padding 16px 25px
+	transition .4s ease-in
+	
+	&:hover,&:focus
+		background-color #eb5238
+		
+	@media screen and (max-width desktopWidth)
+		margin-right 40px
+		
+		&:last-child
+			margin-right 0
+		
+	@media screen and (max-width smallDesktopWidth)
+		margin-right 0
+		display inline
+		margin-bottom 20px
+		text-align center
+		
+
+.what-content-info__title
+	color #eb5238
+	font-size rem(30)
+	font-weight 700
+	line-height 23.99px
+	margin-bottom 52px
+	
+	
+	@media screen and (max-width smallDesktopWidth)
+		font-size rem(22)
+		margin-bottom 20px
+	
+.what-content-info__text
+	color accentColor
+	font-size rem(22)
+	font-weight 300
+	line-height 35.99px
+	
+	@media screen and (max-width desktopWidth)
+		margin-bottom 50px
+	
+	@media screen and (max-width smallDesktopWidth)
+		font-size rem(16)
+		margin-bottom 50px
+	
+.what-content-card
+	position relative
+	display block
+	width 80%
+	background-color #fff
+	box-shadow 6px 9px 35px rgba(25, 40, 66, 0.1)
+	border-radius 20px
+	padding 67px 30px 90px
+	transition all .4s ease-in
+	cursor pointer
+	margin-bottom 61px
+	
+	@media screen and (max-width desktopWidth)
+		width 55%
+	
+	@media screen and (max-width smallDesktopWidth)
+		margin 0 auto
+		margin-bottom 50px
+		width 70%
+	
+	@media screen and (max-width tabletWidth)
+		width 50%
+		
+		
+	@media screen and (max-width bigPhoneWidth)
+		width 80%
+		
+	
+	
+	&:hover
+		background-image linear-gradient(to top, #eb5238 0%, #eb6f38 100%)
+		box-shadow 4px 7px 32px rgba(235, 90, 56, 0.52)
+		color #fff
+		.what-content-card__text,
+		.what-content-card__title
+			
+			color #fff
+			
+		.what-content-card__circle
+			background-color rgba(#fff, .36)
+
+		.what-content-card__circle-inner
+			background-color #fff
+			
+			.icon
+				fill accentColor
+				
+		.what-content-card__icon
+			display flex
+			absolute($left:100px)
+			transition all .4s ease-in
+			
+			a
+				display block
+			
+			.icon
+				fill #fff
+			
+			
+	
+.what-content-card__circle
+	display: block
+	size(76px)
+	background-color rgba(233, 82, 56, .2)
+	border-radius 50%
+	absolute($top:0,$left:0)
+	transform translate(-50%,-50%)
+	
+	
+.what-content-card__circle-inner
+	size(63px)
+	background-color #eb5238
+	border-radius 50%
+	absolute-center()
+	
+	.icon
+		size(46px,38px)
+		fill #fff
+		absolute-center()
+
+
+.what-content-card__title
+	color #2e435e
+	font-size rem(20)
+	font-weight 700
+	line-height 24px
+	margin-bottom 35px
+	
+.what-content-card__text
+	color: #2e435e
+	font-size rem(14)
+	font-weight 400
+	line-height 24px
+	transition .4s ease-in
+	
+	
+.what-content-card__icon
+	absolute($bottom:35px,$left:31px)
+	
+	a
+		display none
+		color #fff
+		font-size rem(12)
+		font-weight 400
+		line-height 24px
+	
+	
+	.icon
+		size(18px,20px)
+		fill #eb5238
+		margin-left 15px
+		
+.what-content-info__block
+	display none
+	
+	&:first-child
+		display block
+		
+		

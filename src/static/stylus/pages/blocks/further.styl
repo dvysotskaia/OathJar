@@ -1,0 +1,211 @@
+.further
+	background url("../img/general/couple.png") -100px top no-repeat
+	background-size 650px auto
+	padding-top 105px
+	padding-bottom 65px
+	
+	@media screen and (max-width desktopWidth)
+		background none
+		padding-top 30px
+	
+	@media screen and (min-width 1500px)
+		background-size auto auto
+
+.further-content
+	display flex
+	justify-content space-between
+	
+	@media screen and (max-width desktopWidth)
+		flex-direction column
+	
+.further-content-img
+	width 45%
+	flex-shrink 0
+	
+	@media screen and (max-width desktopWidth)
+		width 100%
+	
+	@media screen and (max-width tabletWidth)
+		display none
+	
+	img
+		max-width 100%
+		height auto
+		display none
+		
+		@media screen and (max-width desktopWidth)
+			display block
+			margin-bottom 50px
+	
+	
+.further-content-info
+	width 53%
+	flex-shrink 0
+	
+	@media screen and (max-width desktopWidth)
+		width 100%
+	
+.further-content-info__title
+	color accentColor
+	font-size rem(30)
+	font-weight 700
+	line-height 24px
+	margin-bottom 38px
+	
+	@media screen and (max-width tabletWidth)
+		font-size rem(25)
+		
+	
+.further-content-info__text
+	opacity 0.86
+	color accentColor
+	font-weight 400
+	line-height 30px
+	margin-bottom 38px
+	
+.further-content-info__list
+	color accentColor
+	font-weight 500
+	margin-bottom 47px
+	
+.further-content-info__list-item
+	margin-bottom 15px
+	position relative
+	padding-left 47px
+	
+	&:before
+		content ''
+		display block
+		size(32px,29px)
+		background url("../img/general/tickbox.png") center no-repeat
+		absolute($top:3px,$left:0)
+		
+.form-line
+	display flex
+	margin-bottom 46px
+	align-items center
+	
+	@media screen and (max-width tabletWidth)
+		flex-direction column
+		
+
+.form-line__name
+	border-radius 25px
+	color accentColor
+	background-image linear-gradient(to top, #fff9df 0%, #fffdf4 100%)
+	border 0
+	outline none
+	padding 22px 26px
+	margin-right 25px
+		
+	p
+		color #2e435e
+		font-size rem(14)
+		font-weight 700
+		line-height 30px
+		
+	@media screen and (max-width tabletWidth)
+		width 100%
+		margin-right 0
+		margin-bottom 20px
+		padding 22px 15px
+	
+::-moz-placeholder
+	color #2e435e
+	font-weight 700
+	opacity 1
+	
+:-moz-placeholder
+	color #2e435e
+	font-weight 700
+	opacity 1
+	
+
+.form-line__label
+	color accentColor
+	font-size rem(14)
+	font-weight 400
+	cursor pointer
+	
+.form-line__check-text
+	font-size rem(14)
+	
+	span
+		color accentColor
+		margin-right 5px
+	
+	a
+		font-weight 700
+		color accentColor
+		border-bottom 1px solid accentColor
+	
+.form-line__label
+	display flex
+	
+	input[type="checkbox"]
+		display none
+		
+		&:checked
+
+			&~.form-line__check
+				display block
+				
+				&:after
+					size(8px)
+					
+				
+.form-line__check
+	position relative
+	size(16px)
+	background-color #fff
+	border 1px solid rgba(194, 194, 194, 0.4)
+	border-radius 50%
+	box-shadow 2px 2px 0 rgba(14, 15, 33, 0.07)
+	cursor pointer
+	margin-right 15px
+	
+	&:after
+		content ''
+		display block
+		size(0px)
+		absolute-center()
+		background-color #eb5238
+		border-radius 50%
+		transition .2s ease-in
+		
+	
+.form-line__btn
+	border-radius 30px
+	background-image linear-gradient(to top, #eb5238 0%, #eb6f38 100%)
+	color #fff
+	font-weight 700
+	padding 22px 43px
+	border none
+	outline none
+	cursor pointer
+	margin-right 30px
+	transition all .4s
+	
+	&:hover,&:focus
+		background-image linear-gradient(to top, #eb6f38 0%, #eb5238 100%)
+		
+	@media screen and (max-width tabletWidth)
+		margin-right 0
+		margin-bottom 20px
+		
+.form-line__text
+	color accentColor
+	font-size rem(14)
+	font-weight 400
+	line-height 24px
+	
+	span
+		margin-right 5px
+	
+	a
+		color #eb5238
+		font-size rem(14)
+		font-weight 700
+		border-bottom 1px solid #eb5238
+		
+	

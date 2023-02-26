@@ -1,0 +1,99 @@
+@import 'fonts.styl'
+@import 'var.styl'
+@import 'mixins.styl'
+@import 'libs.styl'
+
+html
+	font-size baseFontSize
+	height 100%
+	line-height 1.3
+
+body
+	font-family mainFont
+	height 100%
+	position relative
+	
+
+h1,h2,h3,h4,h5,h6
+	margin 0
+
+ul,li
+	list-style-type none
+	margin 0
+	padding 0
+
+p
+	margin 0
+
+a
+	color black
+	text-decoration none
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video
+	vertical-align middle
+
+textarea
+	resize none
+
+section
+	position relative
+
+input,
+select,
+button
+	outline none
+
+*, *:before, *:after
+	box-sizing border-box
+
+.wrapper
+	display flex
+	flex-direction column
+	height 100%
+
+.content
+	flex 1 0 auto
+	
+.container
+	width 1140px
+	margin 0 auto
+	position relative
+	
+	@media screen and (max-width desktopWidth)
+		max-width smallDesktopWidth
+		padding 0 30px
+	
+	@media screen and (max-width smallDesktopWidth)
+		max-width tabletWidth
+		padding 0 20px
+	
+	@media screen and (max-width tabletWidth)
+		max-width bigPhoneWidth
+		padding 0 10px
+	
+	@media screen and (max-width bigPhoneWidth)
+		max-width smallPhoneWidth
+		padding 0 20px
+	
+.space-between
+	display flex
+	justify-content space-between
+	
+
+	
+	
+//Модули
+
+@import 'modules/header.styl'
+
+@import 'modules/footer.styl'
+
+// СТРАНИЦЫ
+
+// Главная страница
+@import 'pages/index.styl'
